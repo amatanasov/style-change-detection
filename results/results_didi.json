@@ -1,0 +1,549 @@
+{
+    "cross_validation": {
+        "fit_time": "00:09:23",
+        "score_time": "00:04:47",
+        "test_score": {
+            "all": [
+                0.62,
+                0.63,
+                0.63
+            ],
+            "mean": 0.63,
+            "std": 0.01
+        },
+        "train_score": {
+            "mean": 0.63,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "gmm": {
+            "covariance_type": "full",
+            "n_components": 5,
+            "pca": true
+        },
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP GMM"
+    },
+    "timestamp": "2018-03-24 13:04:29",
+    "validation": {
+        "accuracy": 0.65,
+        "time": 655
+    }
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:05:09",
+        "score_time": "00:02:20",
+        "test_score": {
+            "all": [
+                0.48,
+                0.51,
+                0.52
+            ],
+            "mean": 0.5,
+            "std": 0.02
+        },
+        "train_score": {
+            "mean": 0.52,
+            "std": 0.01
+        }
+    },
+    "estimator": {
+        "max_features_len": 23,
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP"
+    },
+    "timestamp": "2018-03-24 13:47:50",
+    "validation": {
+        "accuracy": 0.52,
+        "time": "00:05:06"
+    }
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:04:31",
+        "score_time": "00:02:14",
+        "test_score": {
+            "all": [
+                0.62,
+                0.65,
+                0.64
+            ],
+            "mean": 0.64,
+            "std": 0.01
+        },
+        "train_score": {
+            "mean": 0.77,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "model_description": "SVM",
+        "svc_params": {
+            "C": 1.0,
+            "kernel": "rbf",
+            "max_iter": -1,
+            "random_state": 42,
+            "tol": 0.001,
+            "verbose": true
+        }
+    },
+    "timestamp": "2018-03-24 13:27:31",
+    "validation": {
+        "accuracy": 0.63,
+        "time": 314
+    }
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:01:09",
+        "score_time": "00:00:13",
+        "test_score": {
+            "all": [
+                0.68,
+                0.66,
+                0.7
+            ],
+            "mean": 0.68,
+            "std": 0.02
+        },
+        "train_score": {
+            "mean": 0.97,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "Basic MLP",
+        "tokenizer": {
+            "char_level": false,
+            "filters": "!\"#$%&()*+,-./:;<=>?@[\\]^_`{|}~\t\n",
+            "lower": true,
+            "num_words": 10000,
+            "oov_token": null,
+            "split": " "
+        }
+    },
+    "timestamp": "2018-03-24 13:58:32",
+    "validation": {
+        "accuracy": 0.66,
+        "time": "00:00:54"
+    }
+}
+=================================================
+{
+    "cross_validation": null,
+    "estimator": {
+        "gmm": {
+            "covariance_type": "full",
+            "n_components": 3,
+            "pca": true
+        },
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP GMM"
+    },
+    "grid_search": {
+        "accuracy": 0.634
+    },
+    "timestamp": "2018-03-31 23:50:46",
+    "train_size": 2980,
+    "validation": null
+}
+{
+    "cross_validation": {
+        "fit_time": "00:13:08",
+        "score_time": "00:01:25",
+        "test_score": {
+            "all": [
+                0.62,
+                0.64,
+                0.61,
+                0.68,
+                0.61,
+                0.59,
+                0.68,
+                0.63,
+                0.64,
+                0.65
+            ],
+            "mean": 0.64,
+            "std": 0.03
+        },
+        "train_score": {
+            "mean": 0.64,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "gmm": {
+            "covariance_type": "full",
+            "n_components": 3,
+            "pca": true
+        },
+        "log_params": {
+            "C": 1.0,
+            "penalty": "l2",
+            "random_state": 42,
+            "solver": "liblinear",
+            "tol": 0.001,
+            "verbose": true
+        },
+        "model_description": "LogReg_GMM"
+    },
+    "grid_search": null,
+    "timestamp": "2018-04-01 09:43:23",
+    "train_size": 2980,
+    "validation": null
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:06:24",
+        "score_time": "00:01:41",
+        "test_score": {
+            "all": [
+                0.54,
+                0.61,
+                0.6,
+                0.61,
+                0.6
+            ],
+            "mean": 0.59,
+            "std": 0.03
+        },
+        "train_score": {
+            "mean": 0.61,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP max_diff"
+    },
+    "grid_search": null,
+    "timestamp": "2018-04-01 11:06:25",
+    "train_size": 2980,
+    "validation": null
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:07:38",
+        "score_time": "00:00:47",
+        "test_score": {
+            "all": [
+                0.6,
+                0.61,
+                0.62,
+                0.6,
+                0.64,
+                0.68,
+                0.64,
+                0.64,
+                0.65,
+                0.64
+            ],
+            "mean": 0.63,
+            "std": 0.02
+        },
+        "train_score": {
+            "mean": 0.74,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "model_description": "SVM",
+        "svc_params": {
+            "C": 1.0,
+            "kernel": "rbf",
+            "max_iter": -1,
+            "random_state": 42,
+            "tol": 0.001,
+            "verbose": true
+        }
+    },
+    "grid_search": null,
+    "timestamp": "2018-04-01 13:11:36",
+    "train_size": 2980,
+    "validation": null
+}
+=================================================
+{
+    "cross_validation": null,
+    "estimator": {
+        "gmm": {
+            "covariance_type": "full",
+            "n_components": 3,
+            "pca": true
+        },
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP max_diff"
+    },
+    "grid_search": null,
+    "timestamp": "2018-04-01 20:15:02",
+    "train_size": 2980,
+    "validation": {
+        "accuracy": 0.65,
+        "time": "00:13:36"
+    }
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:04:58",
+        "score_time": "00:04:55",
+        "test_score": {
+            "all": [
+                0.66,
+                0.65
+            ],
+            "mean": 0.65,
+            "std": 0.0
+        },
+        "train_score": {
+            "mean": 0.67,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "gmm": {
+            "covariance_type": "spherical",
+            "n_components": 3,
+            "pca": true
+        },
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP max_diff"
+    },
+    "grid_search": {
+        "accuracy": 0.6513422818791946
+    },
+    "timestamp": "2018-04-01 22:43:32",
+    "train_size": 2980,
+    "validation": null
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:05:54",
+        "score_time": "00:02:54",
+        "test_score": {
+            "all": [
+                0.64,
+                0.63,
+                0.66
+            ],
+            "mean": 0.64,
+            "std": 0.01
+        },
+        "train_score": {
+            "mean": 0.65,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "gmm": {
+            "covariance_type": "full",
+            "n_components": 3,
+            "pca": true
+        },
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP GMM"
+    },
+    "grid_search": null,
+    "timestamp": "2018-04-09 18:31:55",
+    "train_size": 2980,
+    "validation": null
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:11:05",
+        "score_time": "00:05:38",
+        "test_score": {
+            "all": [
+                0.65,
+                0.64,
+                0.67
+            ],
+            "mean": 0.65,
+            "std": 0.01
+        },
+        "train_score": {
+            "mean": 0.66,
+            "std": 0.01
+        }
+    },
+    "estimator": {
+        "gmm": {
+            "covariance_type": "full",
+            "n_components": 3,
+            "pca": true
+        },
+        "mlp": {
+            "fit": {
+                "batch_size": 32,
+                "epochs": 10,
+                "validation_split": 0.1,
+                "verbose": 1
+            },
+            "predict": {
+                "batch_size": 32,
+                "verbose": 1
+            }
+        },
+        "model_description": "MLP max_diff"
+    },
+    "grid_search": null,
+    "timestamp": "2018-04-09 19:03:11",
+    "train_size": 2980,
+    "validation": null
+}
+=================================================
+{
+    "cross_validation": {
+        "fit_time": "00:33:17",
+        "score_time": "00:00:51",
+        "test_score": {
+            "all": [
+                0.58,
+                0.61,
+                0.61,
+                0.62
+            ],
+            "mean": 0.6,
+            "std": 0.02
+        },
+        "train_score": {
+            "mean": 1.0,
+            "std": 0.0
+        }
+    },
+    "estimator": {
+        "cv_random_seed": 777,
+        "lighgbm": {
+            "application": "binary",
+            "bagging_fraction": 0.8,
+            "data_random_seed": 2,
+            "feature_fraction": 0.6,
+            "lambda_l1": 1,
+            "lambda_l2": 1,
+            "learning_rate": 0.1,
+            "metric": "auc",
+            "min_data_in_leaf": 40,
+            "nthread": 4,
+            "num_leaves": 31,
+            "verbose": -1
+        },
+        "logistic_regression": {
+            "inverse_strength": 2.0,
+            "minimum_feature_weight": 0.3,
+            "solver": "sag"
+        },
+        "max_features": 300000,
+        "model_description": "LightGBM with Logistic Regression",
+        "num_folds": 5,
+        "optimal_rounds": {
+            "is_multi_author": 140
+        }
+    },
+    "grid_search": null,
+    "timestamp": "2018-05-13 20:53:24",
+    "train_size": 2980,
+    "validation": {
+        "accuracy": 0.86,
+        "time": "00:05:02"
+    }
+}
+=================================================
