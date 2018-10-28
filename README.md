@@ -1,4 +1,4 @@
-# Style Change Detection 1st Place Solution: Team SU-FMI ( Atanas, Didi, Daniel )
+# Style Change Detection 1st Place Solution: Team SU-FMI ( Atanas, Didi, Daniel, Kristian )
 
 ## Install dependencies
   * ```pip3 install -r requirements.txt```
